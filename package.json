@@ -1,0 +1,28 @@
+{
+  "name": "item-finder",
+  "version": "1.0.0",
+  "description": "Find items",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ebongso/item-finder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ebongso/item-finder/issues"
+  },
+  "homepage": "https://github.com/ebongso/item-finder#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "ejs": "^2.5.6",
+    "express": "^4.15.2",
+    "grunt": "*",
+    "grunt-contrib": "*",
+    "less": "*",
+    "mongojs": "^2.4.0"
+  }
+}
