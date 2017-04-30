@@ -22,6 +22,9 @@
     "express": "^4.15.2",
     "grunt": "*",
     "grunt-contrib": "*",
+    "grunt-contrib-jshint": "*",
+    "grunt-contrib-less": "*",
+    "grunt-contrib-watch": "*",
     "less": "*",
     "mongojs": "^2.4.0"
   }
