@@ -1,20 +1,30 @@
 module.exports = (grunt) => {
   grunt.initConfig({
     jshint: {
-      files: ['Gruntfile.js', 'src/**/*.js', 'test/**/*.js'],
-      options: {
-        globals: {
-          jQuery: true
+      development: {
+        files: ['Gruntfile.js', 'src/**/*.js', 'test/**/*.js'],
+        options: {
+          globals: {
+            jQuery: true
+          }
+        }
+      },
+      production: {
+        files: ['Gruntfile.js', 'src/**/*.js', 'test/**/*.js'],
+        options: {
+          globals: {
+            jQuery: true
+          }
         }
       }
     },
-    less: {
+    sass: {
       development: {
         options: {
           paths: ['assets/css']
         },
         files: {
-          '*.css': '*.less'
+          '*.css': '*.scss'
         }
       },
       production: {
@@ -22,20 +32,20 @@ module.exports = (grunt) => {
           paths: ['assets/css']
         },
         files: {
-          '*.css': '*.less'
+          '*.css': '*.scss'
         }
       }
     },
     watch: {
-      files: ['<%= jshint.files %>', '<%= less.files %>'],
-      tasks: ['jshint', 'less']
+      files: ['<%= jshint.files %>', '<%= sass.files %>'],
+      tasks: ['jshint', 'sass']
     }
   });
 
   grunt.loadNpmTasks('grunt-contrib-jshint');
-  grunt.loadNpmTasks('grunt-contrib-less');
+  grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
-  grunt.registerTask('default', ['jshint', 'less']);
-  grunt.registerTask('heroku:production', 'jshint less');
+  grunt.registerTask('default', ['jshint', 'sass']);
+  grunt.registerTask('heroku:production', 'jshint sass');
 };

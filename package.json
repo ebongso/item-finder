@@ -23,9 +23,10 @@
     "grunt": "*",
     "grunt-contrib": "*",
     "grunt-contrib-jshint": "*",
-    "grunt-contrib-less": "*",
+    "grunt-contrib-sass": "*",
     "grunt-contrib-watch": "*",
-    "less": "*",
+    "ruby": "^0.6.1",
+    "sass": "*",
     "mongojs": "^2.4.0"
   }
 }
