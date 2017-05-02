@@ -46,6 +46,6 @@ module.exports = (grunt) => {
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
-  grunt.registerTask('default', ['jshint', 'sass']);
-  grunt.registerTask('heroku:production', 'jshint sass');
+  //grunt.registerTask('default', ['jshint', 'sass']);
+  //grunt.registerTask('heroku:production', 'jshint sass');
 };

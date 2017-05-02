@@ -21,12 +21,9 @@
     "ejs": "^2.5.6",
     "express": "^4.15.2",
     "grunt": "*",
-    "grunt-contrib": "*",
     "grunt-contrib-jshint": "*",
     "grunt-contrib-sass": "*",
     "grunt-contrib-watch": "*",
-    "ruby": "^0.6.1",
-    "sass": "*",
     "mongojs": "^2.4.0"
   }
 }
