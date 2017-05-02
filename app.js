@@ -23,6 +23,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use('/', index);
 app.use('/api', tasks);
 
-app.listen(port, () => {
+app.listen(process.env.PORT || port, () => {
   console.log('env dev');
 });
