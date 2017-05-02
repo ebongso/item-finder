@@ -14,9 +14,7 @@ const app = express();
 dotenv.load({ path : '.env' });
 
 const db = mongojs(process.env.MONGODB_URI);
-console.log('connected to db');
 app.use((req, res, next) => {
-  console.log(process.env.MONGODB_URI);
   req.db = db;
   next();
 });
@@ -37,5 +35,5 @@ app.use('/', index);
 app.use('/api', items);
 
 app.listen(process.env.PORT || port, () => {
-  console.log('env dev');
+  console.log('connected to db');
 });

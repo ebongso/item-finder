@@ -4,6 +4,7 @@
   "description": "Find items",
   "main": "app.js",
   "scripts": {
+    "postinstall": "grunt sass:production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -25,7 +26,8 @@
     "dotenv": "^4.0.0",
     "ejs": "^2.5.6",
     "express": "^4.15.2",
-    "grunt": "*",
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
     "grunt-contrib-jshint": "*",
     "grunt-contrib-sass": "*",
     "grunt-contrib-watch": "*",
